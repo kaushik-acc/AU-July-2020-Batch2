@@ -1,0 +1,2 @@
+\n - returns the pointer to beginning of new line 
+\r - returns pointer to beginning of the same line with out advancing down
