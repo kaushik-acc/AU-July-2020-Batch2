@@ -1,0 +1,14 @@
+<h3>flatMap</h3>
+<p>This operator is best used when you wish to flatten an inner observable but want to manually control the number of inner subscriptions.</p>
+
+<h3>switchMap</h3>
+<p>The main difference between switchMap and other flattening operators is the cancelling effect. On each emission the previous inner observable (the result of the function you supplied) is cancelled and the new observable is subscribed. You can remember this by the phrase switch to a new observable.</p>
+
+<h3>exhaustMap</h3>
+<p>Map to inner observable, ignore other values until that observable completes.</p>
+
+<h3>concatMap</h3>
+<p>Map values to inner observable, subscribe and emit in order.</p>
+
+<h3>ViewEncapsulation</h3>
+<p>Defines template and style encapsulation options available for Component's Component.</p>

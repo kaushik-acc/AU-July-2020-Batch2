@@ -1,0 +1,37 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label>
+        First Name:
+        <input type="text" formControlName="firstName" required>
+        
+      </label>
+    
+    <label>
+        Last Name:
+        <input type="text" formControlName="lastName">
+      </label>
+<div formGroupName="address">
+    <h3>Address</h3>
+  
+    <label>
+      Street:
+      <input type="text" formControlName="street">
+    </label>
+  
+    <label>
+      City:
+      <input type="text" formControlName="city">
+    </label>
+    
+    <label>
+      State:
+      <input type="text" formControlName="state">
+    </label>
+  
+    <label>
+      PIN Code:
+      <input type="text" formControlName="pin" pattern="^[1-9]{1}[0-9]{2}[0-9]{3}$">
+    </label>
+  </div>
+  <button type="submit" [disabled]="!profileForm.valid" routerLink="/details">Submit</button>
+</form>
+
