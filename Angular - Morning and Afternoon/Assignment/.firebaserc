@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-assignment-f76e8": {
+      "hosting": {
+        "Assignment": [
+          "angular-assignment-f76e8"
+        ]
+      }
+    }
+  }
+}
